@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  SearchForReposOnGithub
+//
+//  Created by WsdlDev on 17/1/11.
+//  Copyright © 2017年 jcYang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "GlobalDef.h"
+
+#endif /* PrefixHeader_pch */

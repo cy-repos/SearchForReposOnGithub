@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Vf-VQ-0kS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Main View Controller-->
+        <scene sceneID="haI-RO-QQV">
+            <objects>
+                <viewController id="9Vf-VQ-0kS" customClass="SearchMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ImX-DX-kBp"/>
+                        <viewControllerLayoutGuide type="bottom" id="fB8-Xt-eGD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0yr-e4-18h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="please input keyword" translatesAutoresizingMaskIntoConstraints="NO" id="Ouj-dV-oK5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="SIB-C6-9We"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lH2-eq-Hxv">
+                                <rect key="frame" x="0.0" y="55" width="375" height="612"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lH2-eq-Hxv" firstAttribute="top" secondItem="Ouj-dV-oK5" secondAttribute="bottom" id="BRf-4P-v5P"/>
+                            <constraint firstItem="lH2-eq-Hxv" firstAttribute="leading" secondItem="0yr-e4-18h" secondAttribute="leading" id="LyA-Qg-zuC"/>
+                            <constraint firstItem="Ouj-dV-oK5" firstAttribute="top" secondItem="0yr-e4-18h" secondAttribute="top" id="NqY-IZ-kQR"/>
+                            <constraint firstAttribute="trailing" secondItem="Ouj-dV-oK5" secondAttribute="trailing" id="Tae-jt-3fh"/>
+                            <constraint firstItem="Ouj-dV-oK5" firstAttribute="leading" secondItem="0yr-e4-18h" secondAttribute="leading" id="fQx-xO-ZMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="lH2-eq-Hxv" secondAttribute="trailing" id="g8r-IC-CMG"/>
+                            <constraint firstItem="fB8-Xt-eGD" firstAttribute="top" secondItem="lH2-eq-Hxv" secondAttribute="bottom" id="qm6-Kb-gvk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mSearchBar" destination="Ouj-dV-oK5" id="5hW-ya-526"/>
+                        <outlet property="mSearchResultTableView" destination="lH2-eq-Hxv" id="VCF-lL-Jbi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wt-dX-g0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

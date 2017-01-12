@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="RepoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AFNetworking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thD-t0-NKa">
+                        <rect key="frame" x="8" y="9.5" width="97" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AFNetworking/AFNetworking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-cT-gKA">
+                        <rect key="frame" x="8" y="35.5" width="163" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jcYang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-ZH-EGL">
+                        <rect key="frame" x="234.5" y="21" width="44.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oCs-cT-gKA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PaT-Kw-kVs"/>
+                    <constraint firstItem="AF2-ZH-EGL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Teg-Ot-1Hr"/>
+                    <constraint firstItem="AF2-ZH-EGL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uq2-TS-zds"/>
+                    <constraint firstItem="oCs-cT-gKA" firstAttribute="top" secondItem="thD-t0-NKa" secondAttribute="bottom" constant="8" id="YiT-LH-uJe"/>
+                    <constraint firstItem="thD-t0-NKa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.6" id="ilA-22-mXK"/>
+                    <constraint firstItem="thD-t0-NKa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uve-Z1-4b3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mFullNameLabel" destination="oCs-cT-gKA" id="qvZ-L3-j99"/>
+                <outlet property="mNameLabel" destination="thD-t0-NKa" id="mLr-xe-EVG"/>
+                <outlet property="mStarLabel" destination="AF2-ZH-EGL" id="IEC-T5-1jQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="101.5"/>
+        </tableViewCell>
+    </objects>
+</document>
